@@ -1,1 +1,5 @@
 demo-hash-table-vis
+
+# Prerequisite:
+- JDK + JavaFX 26
+- VSCode setup: IwY2xjawRV0hhleHRuA2FlbQIxMABicmlkETFMQ1AwNHRvMExITDNHUVBCc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHpaYtIDS6O8fBNu4oQFN2Ln57dc4gEtEbxyBy3Ejub84bjJcxn9WcmKqvKlm_aem_lHSMZjuPaaQ1KYaAAKJrSg
