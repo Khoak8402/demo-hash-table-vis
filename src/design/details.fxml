@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="detailPane" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.DetailController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" style="&#10;" text="Details" textAlignment="CENTER" wrapText="false">
+         <font>
+            <Font size="18.0" fx:id="x1" />
+         </font>
+         <textFill>
+            <Color red="0.624" green="0.624" blue="0.624" fx:id="x2" />
+         </textFill>
+      </Label>
+      <TextFlow layoutX="11.0" layoutY="167.0" prefHeight="260.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Code Highlighting: On development " />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="14.0" layoutY="70.0" prefHeight="16.0" prefWidth="162.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Step: " />
+         </children>
+      </TextFlow>
+      <Text fx:id="descriptionField" layoutX="14.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No operation" />
+   </children>
+</AnchorPane>

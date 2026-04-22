@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="controlPane" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.ControlController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Control" textAlignment="CENTER" wrapText="false">
+         <font>
+            <Font size="18.0" fx:id="x1" />
+         </font>
+         <textFill>
+            <Color red="0.624" green="0.624" blue="0.624" fx:id="x2" />
+         </textFill>
+      </Label>
+      <ComboBox fx:id="operationComboBox" layoutX="28.0" layoutY="316.0" prefWidth="150.0" promptText="Operation" />
+      <ComboBox fx:id="collisionHandlingComboBox" layoutX="30.0" layoutY="109.0" prefWidth="150.0" promptText="Collision Handling" />
+      <ComboBox fx:id="hashFunction1ComboBox" layoutX="30.0" layoutY="153.0" prefWidth="150.0" promptText="Hash Function " />
+      <ComboBox fx:id="hashFunction2ComboBox" layoutX="30.0" layoutY="197.0" prefWidth="150.0" promptText="Hash Function #2" />
+      <TextField fx:id="dataInputField" layoutX="29.0" layoutY="358.0" promptText="Data " />
+      <ComboBox fx:id="dataTypeComboBox" layoutX="30.0" layoutY="63.0" prefWidth="150.0" promptText="Datatype" />
+      <Button fx:id="executeBtn" layoutX="29.0" layoutY="400.0" mnemonicParsing="false" text="Execute" />
+      <ButtonBar layoutX="5.0" layoutY="242.0" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <TextField fx:id="sizeInputField" promptText="Size" />
+            <Button fx:id="createBtn" mnemonicParsing="false" text="Create " />
+         </buttons>
+      </ButtonBar>
+      <Text layoutX="33.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status: " />
+      <Text fx:id="statusField" layoutX="71.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No error detected" />
+   </children>
+</AnchorPane>
