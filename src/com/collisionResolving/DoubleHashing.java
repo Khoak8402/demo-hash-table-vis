@@ -7,7 +7,8 @@ public class DoubleHashing implements CollisionResolver{
     public int resolve(int key, int step, HashTable table){
         //Find the next empty slot, but with h2 jump
         int hashCode= table.h1(key);
-        return (hashCode + table.h2(key)*step)%table.getSize();
+        int hashCode2= table.h2(key)==0? 1 : table.h2(key); //hashCode2 should not be 0
+        return (hashCode + hashCode2*step)%table.getSize();
     }
 
     @Override

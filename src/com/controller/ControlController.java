@@ -159,11 +159,8 @@ public class ControlController {
                 break;
         
             case "Search":
-                int[] successSearchOp= tabelModel.search(data);
-                if(successSearchOp==null)
-                    alertStatus(StatusMessage.SUCCESS_MSG);
-                else
-                    alertStatus(StatusMessage.FAILED_MSG);
+                tabelModel.search(data);
+                alertStatus(StatusMessage.SUCCESS_MSG);
                 break;
             
             case null:

@@ -247,11 +247,14 @@ public class HashTableModel {
             int row= hashTable.collisionResolve(key, i);
             generateScriptOnCheckRowOccupiedEvent(row);
 
-            if(hashTable.checkEmptyRow(row))
-                continue;
+            if(hashTable.checkEmptyRow(row)){
+                generateScriptOnNotFoundEvent(key);
+                return null;
+            }
 
             generateScriptOnCheckCellMatchedEvent(row, 0);
-            if(!hashTable.checkEmptyRow(row) && hashTable.getElement(row, 0)==key){
+        
+            if(hashTable.getElement(row, 0)==key){
                 //Found
                 generateScriptOnFoundEvent(key, row, 0);
                 return new int[]{row, 0};

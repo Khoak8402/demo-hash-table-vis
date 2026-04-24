@@ -98,7 +98,9 @@ public class HashTable {
 
         for(int i=0; i<=size; i++){
             int row= collisionResolve(key, i);
-            if(!checkEmptyRow(row) && getElement(row, i)==key){
+            if(checkEmptyRow(row))
+                return null;
+            if(getElement(row, i)==key){
                 //Found
                 return new int[]{row, 0};
             }

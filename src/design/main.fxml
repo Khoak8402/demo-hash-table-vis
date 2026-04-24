@@ -40,7 +40,7 @@
         </Menu>
       </menus>
     </MenuBar>
-    <SplitPane dividerPositions="0.25, 0.65" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <SplitPane dividerPositions="0.1, 0.55" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <items>
             <fx:include fx:id="controlPane" source="control.fxml" />
             <fx:include fx:id="viewPane" source="view.fxml" />
